@@ -254,6 +254,7 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
             anim.getAnimator().setInterpolator(mEaseOutInterpolator);
             final int thisIndex = i;
             anim.getAnimator().addUpdateListener(new AnimatorUpdateListener() {
+                @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
                     final Bitmap outline = (Bitmap)anim.getTag();
 
@@ -1026,6 +1027,7 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
             });
             va.addListener(new AnimatorListenerAdapter() {
                 boolean cancelled = false;
+                @Override
                 public void onAnimationEnd(Animator animation) {
                     // If the animation was cancelled, it means that another animation
                     // has interrupted this one, and we don't want to lock the item into
@@ -1038,6 +1040,7 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
                         mReorderAnimators.remove(lp);
                     }
                 }
+                @Override
                 public void onAnimationCancel(Animator animation) {
                     cancelled = true;
                 }
@@ -1418,7 +1421,6 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
         int dirtyEdges;
         boolean boundingRectDirty;
 
-        @SuppressWarnings("unchecked")
         public ViewCluster(ArrayList<View> views, ItemConfiguration config) {
             this.views = (ArrayList<View>) views.clone();
             this.config = config;
@@ -1557,6 +1559,7 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
         PositionComparator comparator = new PositionComparator();
         class PositionComparator implements Comparator<View> {
             int whichEdge = 0;
+            @Override
             public int compare(View left, View right) {
                 CellAndSpan l = config.map.get(left);
                 CellAndSpan r = config.map.get(right);
@@ -2111,6 +2114,7 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
                 }
             });
             va.addListener(new AnimatorListenerAdapter() {
+                @Override
                 public void onAnimationRepeat(Animator animation) {
                     // We make sure to end only after a full period
                     initDeltaX = 0;

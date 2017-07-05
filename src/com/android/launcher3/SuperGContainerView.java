@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.util.TransformingTouchDelegate;
 
 public class SuperGContainerView extends SuperQsb
@@ -63,6 +64,9 @@ public class SuperGContainerView extends SuperQsb
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
+        if (!FeatureFlags.showPixelBar(getContext())) {
+            return;
+        }
         if (mTouchDelegate != null) {
             mLauncher.getWorkspace().findViewById(R.id.workspace_blocked_row).setTouchDelegate(mTouchDelegate);
         }
@@ -111,7 +115,7 @@ public class SuperGContainerView extends SuperQsb
     @Override
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
-        if (mTouchDelegate != null) {
+        if (mTouchDelegate != null && FeatureFlags.showPixelBar(getContext())) {
             int i5 = 0;
             if (Utilities.isRtl(getResources())) {
                 i5 = mQsbView.getLeft() - mLauncher.getDeviceProfile().getWorkspacePadding(sTempRect).left;

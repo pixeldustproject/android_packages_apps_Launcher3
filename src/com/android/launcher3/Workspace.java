@@ -659,7 +659,7 @@ public class Workspace extends PagedView
 
         CellLayout.LayoutParams lp = new CellLayout.LayoutParams(0, 0, firstPage.getCountX(), 1);
         lp.canReorder = false;
-        if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, true)) {
+        if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, FeatureFlags.showPixelBar(getContext()))) {
             Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
         }
     }
@@ -1054,7 +1054,7 @@ public class Workspace extends PagedView
             long id = mWorkspaceScreens.keyAt(i);
             CellLayout cl = mWorkspaceScreens.valueAt(i);
             // FIRST_SCREEN_ID can never be removed.
-            if ((!FeatureFlags.QSB_ON_FIRST_SCREEN || id > FIRST_SCREEN_ID)
+            if (((!FeatureFlags.showPixelBar(getContext()) || !FeatureFlags.QSB_ON_FIRST_SCREEN) || id > FIRST_SCREEN_ID)
                     && cl.getShortcutsAndWidgets().getChildCount() == 0) {
                 removeScreens.add(id);
             }
@@ -4392,5 +4392,19 @@ public class Workspace extends PagedView
 
     public static final boolean isQsbContainerPage(int pageNo) {
         return pageNo == 0;
+    }
+
+    public void updateQsbVisibility() {
+        boolean visible = FeatureFlags.showPixelBar(getContext());
+        View qsb = findViewById(getEmbeddedQsbId());
+        if (qsb != null) {
+            qsb.setVisibility(visible ? View.VISIBLE : View.GONE);
+            CellLayout firstPage = mWorkspaceScreens.get(FIRST_SCREEN_ID);
+            if (!visible) {
+                firstPage.markCellsAsUnoccupiedForView(qsb);
+            } else {
+                firstPage.markCellsAsOccupiedForView(qsb);
+            }
+        }
     }
 }

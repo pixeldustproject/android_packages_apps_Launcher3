@@ -16,6 +16,11 @@
 
 package com.android.launcher3.config;
 
+import android.content.Context;
+
+import com.android.launcher3.Utilities;
+
+
 /**
  * Defines a set of flags used to control various launcher behaviors
  */
@@ -23,6 +28,7 @@ public final class FeatureFlags {
     private FeatureFlags() {}
 
     // Custom flags go below this
+    private static final String LAUNCHER3_SHOW_PIXEL_BAR = "pref_showPixelBar";
     public static boolean LAUNCHER3_DISABLE_ICON_NORMALIZATION = false;
     // As opposed to the new spring-loaded workspace.
     public static boolean LAUNCHER3_LEGACY_WORKSPACE_DND = false;
@@ -39,4 +45,9 @@ public final class FeatureFlags {
     public static final boolean PULLDOWN_SEARCH = false;
     // When enabled the status bar may show dark icons based on the top of the wallpaper.
     public static final boolean LIGHT_STATUS_BAR = false;
+
+    public static boolean showPixelBar(Context context) {
+        boolean enabled = Utilities.getPrefs(context).getBoolean(LAUNCHER3_SHOW_PIXEL_BAR, true);
+        return enabled;
+    }
 }

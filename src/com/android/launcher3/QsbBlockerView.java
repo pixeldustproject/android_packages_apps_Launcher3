@@ -31,6 +31,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RemoteViews;
 
+import com.android.launcher3.config.FeatureFlags;
+
 /**
  * A simple view used to show the region blocked by QSB during drag and drop.
  */
@@ -99,6 +101,10 @@ public class QsbBlockerView extends FrameLayout implements Workspace.OnStateChan
 
     @Override
     public void onGsa(RemoteViews views) {
+        if (!FeatureFlags.showPixelBar(getContext())) {
+            removeAllViews();
+            return;
+        }
         long n = 200L;
         View oldView = mView;
         int oldState = mState;
