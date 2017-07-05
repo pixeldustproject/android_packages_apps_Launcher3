@@ -28,4 +28,10 @@
             android:defaultValue="true"
             android:persistent="true" />
 
+    <SwitchPreference
+            android:key="pref_isHotseatTransparent"
+            android:title="Transparent Tray"
+            android:defaultValue="false"
+            android:persistent="true" />
+
 </PreferenceScreen>

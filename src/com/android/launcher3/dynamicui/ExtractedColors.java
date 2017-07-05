@@ -24,6 +24,8 @@ import android.util.Log;
 
 import com.android.launcher3.Utilities;
 
+import com.android.launcher3.config.FeatureFlags;
+
 /**
  * Saves and loads colors extracted from the wallpaper, as well as the associated wallpaper id.
  */
@@ -146,14 +148,18 @@ public class ExtractedColors {
      * - 18% white for super dark
      * - 25% white otherwise
      */
-    public void updateHotseatPalette(Palette hotseatPalette) {
+    public void updateHotseatPalette(Palette hotseatPalette, Context context) {
         int hotseatColor;
-        if (hotseatPalette != null && ExtractionUtils.isSuperLight(hotseatPalette)) {
-            hotseatColor = ColorUtils.setAlphaComponent(Color.BLACK, (int) (0.12f * 255));
-        } else if (hotseatPalette != null && ExtractionUtils.isSuperDark(hotseatPalette)) {
-            hotseatColor = ColorUtils.setAlphaComponent(Color.WHITE, (int) (0.18f * 255));
+        if (FeatureFlags.isTransparentHotseat(context)) {
+            hotseatColor = Color.TRANSPARENT;
         } else {
-            hotseatColor = ColorUtils.setAlphaComponent(Color.WHITE, (int) (0.25f * 255));
+            if (hotseatPalette != null && ExtractionUtils.isSuperLight(hotseatPalette)) {
+                hotseatColor = ColorUtils.setAlphaComponent(Color.BLACK, (int) (0.12f * 255));
+            } else if (hotseatPalette != null && ExtractionUtils.isSuperDark(hotseatPalette)) {
+                hotseatColor = ColorUtils.setAlphaComponent(Color.WHITE, (int) (0.18f * 255));
+            } else {
+                hotseatColor = ColorUtils.setAlphaComponent(Color.WHITE, (int) (0.25f * 255));
+            }
         }
         setColorAtIndex(HOTSEAT_INDEX, hotseatColor);
     }

@@ -29,6 +29,7 @@ public final class FeatureFlags {
 
     // Custom flags go below this
     private static final String LAUNCHER3_SHOW_PIXEL_BAR = "pref_showPixelBar";
+    private static final String LAUNCHER3_TRANSPARENT_HOTSEAT = "pref_isHotseatTransparent";
     public static boolean LAUNCHER3_DISABLE_ICON_NORMALIZATION = false;
     // As opposed to the new spring-loaded workspace.
     public static boolean LAUNCHER3_LEGACY_WORKSPACE_DND = false;
@@ -48,6 +49,11 @@ public final class FeatureFlags {
 
     public static boolean showPixelBar(Context context) {
         boolean enabled = Utilities.getPrefs(context).getBoolean(LAUNCHER3_SHOW_PIXEL_BAR, true);
+        return enabled;
+    }
+
+    public static boolean isTransparentHotseat(Context context) {
+        boolean enabled = Utilities.getPrefs(context).getBoolean(LAUNCHER3_TRANSPARENT_HOTSEAT, false);
         return enabled;
     }
 }
