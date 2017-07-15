@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package ch.deletescape.lawnchair.config;
+package com.pixeldust.launcher.config;
 
 public class ProviderConfig {
 
-    public static final String AUTHORITY = "ch.deletescape.lawnchair.settings";
+    public static final String AUTHORITY = "com.pixeldust.launcher.settings";
 }

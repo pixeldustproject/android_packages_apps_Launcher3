@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package ch.deletescape.lawnchair.config;
+package com.pixeldust.launcher.config;
 
 import android.content.Context;
-import ch.deletescape.lawnchair.Launcher;
-import ch.deletescape.lawnchair.R;
-import ch.deletescape.lawnchair.Utilities;
+import com.pixeldust.launcher.Launcher;
+import com.pixeldust.launcher.R;
+import com.pixeldust.launcher.Utilities;
 
 /**
  * Defines a set of flags used to control various launcher behaviors

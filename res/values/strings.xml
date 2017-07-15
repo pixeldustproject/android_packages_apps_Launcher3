@@ -21,7 +21,7 @@
     <skip />
 
     <!-- Application name -->
-    <string name="app_name">Lawnchair</string>
+    <string name="app_name">PixelDustLauncher</string>
     <!-- Default folder name -->
     <string name="folder_name" />
     <!-- Work folder name -->
@@ -308,8 +308,8 @@
     <string name="notifications_header">Notifications</string>
     <string name="widgets_bottom_sheet_title">%1$s widgets</string>
 
-    <!-- About Lawnchair -->
-    <string name="about_text">Lawnchair is a Launcher app created by Till Kottmann (aka deletescape). It\'s based on Launcher3 from AOSP.</string>
+    <!-- About PixelDustLauncher -->
+    <string name="about_text">PixelDustLauncher is a built-in Launcher app shipped with Pixel Dust ROM. It\'s based on LawnChair from Till Kottmann (aka deletescape) and Launcher3 from AOSP.</string>
     <string name="about_title">About</string>
     <string name="week_day_format">%1$s, %2$s</string>
 

@@ -19,7 +19,7 @@ android {
         travis {
             storeFile file("debug.jks")
             storePassword System.getenv("STORE_PASSWORD")
-            keyAlias "Lawnchair"
+            keyAlias "PixelDustLauncher"
             keyPassword System.getenv("KEY_PASSWORD")
         }
     }
@@ -27,7 +27,7 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 26
-        applicationId 'ch.deletescape.lawnchair'
+        applicationId 'com.pixeldust.launcher'
         buildConfigField "String", "MOBILE_CENTER_KEY", "\"" + System.getenv("MOBILE_CENTER_KEY") + "\""
         if (System.getenv("TRAVIS") == "true") {
             versionCode = Integer.valueOf(System.getenv("TRAVIS_BUILD_NUMBER"))
@@ -58,8 +58,8 @@ android {
 
     productFlavors {
         aosp {
-            applicationId 'ch.deletescape.lawnchair'
-            testApplicationId 'ch.deletescape.lawnchair.tests'
+            applicationId 'com.pixeldust.launcher'
+            testApplicationId 'com.pixeldust.launcher.tests'
             dimension "variant"
         }
     }

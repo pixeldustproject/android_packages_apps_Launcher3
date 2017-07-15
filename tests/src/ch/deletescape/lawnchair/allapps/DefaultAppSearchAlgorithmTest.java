@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ch.deletescape.lawnchair.allapps;
+package com.pixeldust.launcher.allapps;
 
 import android.content.ComponentName;
 import android.test.InstrumentationTestCase;
@@ -21,7 +21,7 @@ import android.test.InstrumentationTestCase;
 import java.util.ArrayList;
 import java.util.List;
 
-import ch.deletescape.lawnchair.AppInfo;
+import com.pixeldust.launcher.AppInfo;
 
 /**
  * Unit tests for {@link DefaultAppSearchAlgorithm}

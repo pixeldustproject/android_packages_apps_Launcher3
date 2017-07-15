@@ -3,7 +3,7 @@
 
     <Preference
         android:key="kill"
-        android:title="Restart Lawnchair"
+        android:title="Restart PixelDustLauncher"
         android:summary="Can be helpful if some settings are not properly applied" />
     <Preference
         android:key="rebuild_icondb"

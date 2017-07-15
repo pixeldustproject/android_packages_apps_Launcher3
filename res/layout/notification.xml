@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ch.deletescape.lawnchair.notification.NotificationItemView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.pixeldust.launcher.notification.NotificationItemView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/notification_view"
     android:layout_width="@dimen/bg_popup_item_width"
     android:layout_height="wrap_content"
@@ -64,4 +64,4 @@
             android:layout_height="@dimen/notification_footer_height"
             android:layout_below="@id/divider" />
     </RelativeLayout>
-</ch.deletescape.lawnchair.notification.NotificationItemView>
+</com.pixeldust.launcher.notification.NotificationItemView>

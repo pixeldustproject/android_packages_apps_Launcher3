@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ch.deletescape.lawnchair.preferences.IconPackPreference
+    <com.pixeldust.launcher.preferences.IconPackPreference
         android:key="pref_iconPackPackage"
         android:title="Icon Pack"
         android:summary="Select an icon Pack"
@@ -42,7 +42,7 @@
         android:dependency="pref_isHotseatTransparent"
         android:persistent="true" />
 
-    <ch.deletescape.lawnchair.preferences.SeekbarPreference
+    <com.pixeldust.launcher.preferences.SeekbarPreference
         android:key="pref_blurRadius"
         android:title="Blur radius"
         android:dependency="pref_enableBlur"
@@ -84,7 +84,7 @@
         android:dependency="pref_hideAppLabels"
         android:persistent="true" />
 
-    <ch.deletescape.lawnchair.preferences.SeekbarPreference
+    <com.pixeldust.launcher.preferences.SeekbarPreference
         android:key="pref_allAppsOpacitySB"
         android:title="All apps opacity"
         app:minValue="0"
@@ -118,7 +118,7 @@
         android:defaultValue="@string/generalDefault"
         android:persistent="true" />
 
-    <ch.deletescape.lawnchair.preferences.SeekbarPreference
+    <com.pixeldust.launcher.preferences.SeekbarPreference
         android:key="pref_iconScaleSB"
         android:title="Icon Scale"
         app:minValue="0.3"
@@ -128,7 +128,7 @@
         app:defaultValue="1.0"
         android:persistent="true" />
 
-    <ch.deletescape.lawnchair.preferences.SeekbarPreference
+    <com.pixeldust.launcher.preferences.SeekbarPreference
         android:key="pref_iconTextScaleSB"
         android:title="Icon Text Scale"
         app:minValue="0.3"
@@ -148,5 +148,5 @@
     <Preference
         android:key="notification_access"
         android:title="Notification Badges and Preview"
-        android:summary="Allow Lawnchair to access your notification to enable this features" />
+        android:summary="Allow PixelDustLauncher to access your notification to enable this features" />
 </PreferenceScreen>

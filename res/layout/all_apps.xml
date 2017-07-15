@@ -14,7 +14,7 @@
 --><!-- The top and bottom paddings are defined in this container, but since we want
      the list view to span the full width (for touch interception purposes), we
      will bake the left/right padding into that view's background itself. -->
-<ch.deletescape.lawnchair.allapps.AllAppsContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.pixeldust.launcher.allapps.AllAppsContainerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:id="@+id/apps_view"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
     android:orientation="vertical"
     launcher:revealBackground="@drawable/quantum_panel_shape">
 
-    <ch.deletescape.lawnchair.allapps.AllAppsBackground
+    <com.pixeldust.launcher.allapps.AllAppsBackground
         android:id="@+id/reveal_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +31,7 @@
         android:visibility="invisible" />
 
 
-    <ch.deletescape.lawnchair.allapps.AllAppsRecyclerViewContainerView
+    <com.pixeldust.launcher.allapps.AllAppsRecyclerViewContainerView
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,7 +42,7 @@
         android:visibility="gone">
 
         <!-- DO NOT CHANGE THE ID -->
-        <ch.deletescape.lawnchair.allapps.AllAppsRecyclerView
+        <com.pixeldust.launcher.allapps.AllAppsRecyclerView
             android:id="@+id/apps_list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -62,7 +62,7 @@
             android:orientation="horizontal"
             android:saveEnabled="false">
 
-            <ch.deletescape.lawnchair.ExtendedEditText
+            <com.pixeldust.launcher.ExtendedEditText
                 android:id="@+id/search_box_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -80,7 +80,7 @@
                 android:textSize="16sp" />
         </FrameLayout>
 
-    </ch.deletescape.lawnchair.allapps.AllAppsRecyclerViewContainerView>
+    </com.pixeldust.launcher.allapps.AllAppsRecyclerViewContainerView>
 
     <View
         android:id="@+id/nav_bar_bg"
@@ -91,4 +91,4 @@
         android:focusable="false"
         android:visibility="invisible"
         style="@style/AllAppsNavBarProtection" />
-</ch.deletescape.lawnchair.allapps.AllAppsContainerView>
+</com.pixeldust.launcher.allapps.AllAppsContainerView>

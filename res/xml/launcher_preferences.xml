@@ -17,23 +17,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ch.deletescape.lawnchair.settings.ui.SubPreference
+    <com.pixeldust.launcher.settings.ui.SubPreference
         android:title="UI"
         app:content="@xml/launcher_ui_preferences" />
 
-    <ch.deletescape.lawnchair.settings.ui.SubPreference
+    <com.pixeldust.launcher.settings.ui.SubPreference
         android:title="Pixel Style"
         app:content="@xml/launcher_pixel_style_preferences" />
 
-    <ch.deletescape.lawnchair.settings.ui.SubPreference
+    <com.pixeldust.launcher.settings.ui.SubPreference
         android:title="Behavior"
         app:content="@xml/launcher_behavior_preferences" />
 
-    <ch.deletescape.lawnchair.settings.ui.SubPreference
+    <com.pixeldust.launcher.settings.ui.SubPreference
         android:title="Debug"
         app:content="@xml/launcher_debug_preferences" />
 
-    <ch.deletescape.lawnchair.settings.ui.SubPreference
+    <com.pixeldust.launcher.settings.ui.SubPreference
         android:title="Import/Export"
         app:content="@xml/launcher_backup_preferences" />
 

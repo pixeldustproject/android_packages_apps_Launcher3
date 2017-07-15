@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ch.deletescape.lawnchair.widget.WidgetsContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.pixeldust.launcher.widget.WidgetsContainerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widgets_view"
     android:layout_width="fill_parent"
@@ -25,7 +25,7 @@
         android:elevation="15.0dip"
         android:visibility="gone">
 
-        <ch.deletescape.lawnchair.widget.WidgetsRecyclerView
+        <com.pixeldust.launcher.widget.WidgetsRecyclerView
             android:id="@+id/widgets_list_view"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
@@ -42,4 +42,4 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
     </FrameLayout>
-</ch.deletescape.lawnchair.widget.WidgetsContainerView>
+</com.pixeldust.launcher.widget.WidgetsContainerView>
