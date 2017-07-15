@@ -36,7 +36,6 @@
     <uses-permission android:name="com.pixeldust.launcher.permission.QSB" />
 
     <application
-        android:name=".App"
         android:backupAgent="com.pixeldust.launcher.LauncherBackupAgent"
         android:fullBackupContent="@xml/backupscheme"
         android:fullBackupOnly="true"
