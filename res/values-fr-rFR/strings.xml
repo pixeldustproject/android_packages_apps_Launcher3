@@ -249,8 +249,8 @@
   <string name="shortcuts_menu_with_notifications_description">%1$d shortcuts and %2$d notifications for %3$s</string>
   <string name="notifications_header">Notifications</string>
   <string name="widgets_bottom_sheet_title">Widgets %1$s</string>
-  <!-- About Lawnchair -->
-  <string name="about_text">Lawnchair est un launcher créé par Till Kottmann (deletescape). Il est basé sur Launcher3 d\'AOSP.</string>
+  <!-- About PixelDustLauncher -->
+  <string name="about_text">PixelDustLauncher est un launcher créé par Till Kottmann (deletescape). Il est basé sur Launcher3 d\'AOSP.</string>
   <string name="about_title">A propos</string>
   <string name="week_day_format">%1$s, %2$s</string>
   <string name="icon_pack_preference_title">Pack d\'icônes</string>
@@ -276,7 +276,7 @@
   <string name="full_width_width_widgets_pref_title">Widgets de pleine largeur</string>
   <string name="full_width_widgets_pref_summary">Permettre aux widgets de s’étendre sur toute la largeur sans marge</string>
   <string name="notification_access_pref_title">Badges de notification</string>
-  <string name="notification_access_pref_summary">Permettre à Lawnchair d\'accéder à vos notifications pour activer cette fonctionnalité</string>
+  <string name="notification_access_pref_summary">Permettre à PixelDustLauncher d\'accéder à vos notifications pour activer cette fonctionnalité</string>
   <string name="ui_pref_title">Interface utilisateur</string>
   <string name="pixel_style_pref_title">Style Pixel</string>
   <string name="behavior_pref_title">Comportement</string>
@@ -288,7 +288,7 @@
   <string name="pixel_style_icons_pref_title">Utiliser les icônes Pixel</string>
   <string name="pixel_style_icons_pref_summary">Lorsque cette option est activée, des icônes circulaires seront utilisées si possible</string>
   <string name="show_google_now_tab_pref_title">Afficher la page Google Now</string>
-  <string name="restart_lawnchair_pref_title">Redémarrez Lawnchair</string>
+  <string name="restart_lawnchair_pref_title">Redémarrez PixelDustLauncher</string>
   <string name="restart_lawnchair_pref_summary">Peut être utile si certains paramètres ne sont pas correctement appliqués</string>
   <string name="rebuild_icondb_pref_title">Reconstruire la base de données des icônes</string>
   <string name="pinch_to_overview_pref_title">Pincer pour afficher les aperçus</string>
@@ -311,8 +311,8 @@
   <string name="import_db_title">Import database</string>
   <string name="export_prefs_title">Export settings</string>
   <string name="import_prefs_title">Import settings</string>
-  <string name="notification_listener_label">Lawnchair - Notification badges</string>
-  <string name="color_extraction_label">Lawnchair - Color extraction</string>
+  <string name="notification_listener_label">PixelDustLauncher - Notification badges</string>
+  <string name="color_extraction_label">PixelDustLauncher - Color extraction</string>
   <string name="test_title">Test</string>
   <string name="visibility">Visibility</string>
   <!-- Customization Color -->

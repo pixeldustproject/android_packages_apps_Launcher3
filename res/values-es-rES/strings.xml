@@ -249,8 +249,8 @@
   <string name="shortcuts_menu_with_notifications_description">%1$d atajos y %2$d notificaciones para %3$s</string>
   <string name="notifications_header">Notificaciones</string>
   <string name="widgets_bottom_sheet_title">%1$s widgets</string>
-  <!-- About Lawnchair -->
-  <string name="about_text">Lawnchair es un Launcher creado por Till Kottmann (alias deletescape). Basado en Launcher3 de AOSP.</string>
+  <!-- About PixelDustLauncher -->
+  <string name="about_text">PixelDustLauncher es un Launcher creado por Till Kottmann (alias deletescape). Basado en Launcher3 de AOSP.</string>
   <string name="about_title">Acerca de</string>
   <string name="week_day_format">%1$s, %2$s</string>
   <string name="icon_pack_preference_title">Paquete de iconos</string>
@@ -276,7 +276,7 @@
   <string name="full_width_width_widgets_pref_title">Widgets con redimensionamiento completo</string>
   <string name="full_width_widgets_pref_summary">Permitir a los widgets mostrarse sobre todo el ancho sin relleno</string>
   <string name="notification_access_pref_title">Vista previa y notificaciones varias</string>
-  <string name="notification_access_pref_summary">Permitir a Lawnchair el acceso a las notificaciones</string>
+  <string name="notification_access_pref_summary">Permitir a PixelDustLauncher el acceso a las notificaciones</string>
   <string name="ui_pref_title">Interfaz de usuario</string>
   <string name="pixel_style_pref_title">Estilo Pixel</string>
   <string name="behavior_pref_title">Comportamiento</string>
@@ -288,7 +288,7 @@
   <string name="pixel_style_icons_pref_title">Usar iconos Pixel</string>
   <string name="pixel_style_icons_pref_summary">Cuando los iconos circulares esten activados, se podran utilizar cuando sea posible</string>
   <string name="show_google_now_tab_pref_title">Mostrar pagina de Google Now</string>
-  <string name="restart_lawnchair_pref_title">Reiniciar Lawnchair</string>
+  <string name="restart_lawnchair_pref_title">Reiniciar PixelDustLauncher</string>
   <string name="restart_lawnchair_pref_summary">Util para los cambios que no se aplican correctamente</string>
   <string name="rebuild_icondb_pref_title">Reconstrución de la base de datos de los iconos</string>
   <string name="pinch_to_overview_pref_title">Pinchar para vista general</string>
@@ -311,8 +311,8 @@
   <string name="import_db_title">Importar base de datos</string>
   <string name="export_prefs_title">Exportar configuración</string>
   <string name="import_prefs_title">Importar configuración</string>
-  <string name="notification_listener_label">Lawnchair - Insignia en notificaciones</string>
-  <string name="color_extraction_label">Lawnchair - Extracción de colores</string>
+  <string name="notification_listener_label">PixelDustLauncher - Insignia en notificaciones</string>
+  <string name="color_extraction_label">PixelDustLauncher - Extracción de colores</string>
   <string name="test_title">Prueba</string>
   <string name="visibility">Visibilidad</string>
   <!-- Customization Color -->

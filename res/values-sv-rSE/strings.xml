@@ -249,8 +249,8 @@
   <string name="shortcuts_menu_with_notifications_description">%1$d genvägar och %2$d notifikationer för %3$s</string>
   <string name="notifications_header">Notifikationer</string>
   <string name="widgets_bottom_sheet_title">%1$s widgetar</string>
-  <!-- About Lawnchair -->
-  <string name="about_text">Lawnchair är en hemskärm-app skapad av Till Kottmann (deletescape). Den är baserad på Launcher3 från AOSP.</string>
+  <!-- About PixelDustLauncher -->
+  <string name="about_text">PixelDustLauncher är en hemskärm-app skapad av Till Kottmann (deletescape). Den är baserad på Launcher3 från AOSP.</string>
   <string name="about_title">Om</string>
   <string name="week_day_format">%1$s, %2$s</string>
   <string name="icon_pack_preference_title">Ikonpaket</string>
@@ -276,7 +276,7 @@
   <string name="full_width_width_widgets_pref_title">Full bredd widgetar</string>
   <string name="full_width_widgets_pref_summary">Tillåt widgetar att sträcka sig över hela bredden utan spaltfyllnad</string>
   <string name="notification_access_pref_title">Notifikationsmärken och förhandsgranskning</string>
-  <string name="notification_access_pref_summary">Tillåt Lawnchair att komma åt dina notifikationer för att aktivera denna funktion</string>
+  <string name="notification_access_pref_summary">Tillåt PixelDustLauncher att komma åt dina notifikationer för att aktivera denna funktion</string>
   <string name="ui_pref_title">Användargränssnitt</string>
   <string name="pixel_style_pref_title">Pixel stil</string>
   <string name="behavior_pref_title">Beteende</string>
@@ -288,7 +288,7 @@
   <string name="pixel_style_icons_pref_title">Använd Pixel ikoner</string>
   <string name="pixel_style_icons_pref_summary">När aktiverad kommer cirkulära ikoner användas där möjligt</string>
   <string name="show_google_now_tab_pref_title">Visa Google Now sida</string>
-  <string name="restart_lawnchair_pref_title">Starta om Lawnchair</string>
+  <string name="restart_lawnchair_pref_title">Starta om PixelDustLauncher</string>
   <string name="restart_lawnchair_pref_summary">Kan vara användbart om vissa inställningar inte tillämpas korrekt</string>
   <string name="rebuild_icondb_pref_title">Återskapa ikondatabasen</string>
   <string name="pinch_to_overview_pref_title">Nyp för översikt</string>
@@ -311,8 +311,8 @@
   <string name="import_db_title">Importera databas</string>
   <string name="export_prefs_title">Exportera inställningar</string>
   <string name="import_prefs_title">Import inställningar</string>
-  <string name="notification_listener_label">Lawnchair - Notifikationsmärken</string>
-  <string name="color_extraction_label">Lawnchair - Färgutvinning</string>
+  <string name="notification_listener_label">PixelDustLauncher - Notifikationsmärken</string>
+  <string name="color_extraction_label">PixelDustLauncher - Färgutvinning</string>
   <string name="test_title">Test</string>
   <string name="visibility">Synlighet</string>
   <!-- Customization Color -->

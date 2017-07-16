@@ -249,8 +249,8 @@
   <string name="shortcuts_menu_with_notifications_description">%1$d Verknüpfungen und %2$d Benachrichtigungen für %3$s</string>
   <string name="notifications_header">Benachrichtigungen</string>
   <string name="widgets_bottom_sheet_title">%1$s Widgets</string>
-  <!-- About Lawnchair -->
-  <string name="about_text">PixelDustLauncher ist der Standard Launcher von Pixel Dust ROM. PixelDustLauncher basiert auf Lawnchair von Till Kottmann (aka deletescape) und auf Launcher3 von AOSP.</string>
+  <!-- About PixelDustLauncher -->
+  <string name="about_text">PixelDustLauncher ist der Standard Launcher von Pixel Dust ROM. Er basiert auf Lawnchair von Till Kottmann (aka deletescape) und auf Launcher3 von AOSP.</string>
   <string name="about_title">Über</string>
   <string name="week_day_format">%1$s, %2$s</string>
   <string name="icon_pack_preference_title">Iconpack</string>
